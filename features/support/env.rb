@@ -4,7 +4,7 @@ require 'capybara/cucumber'
 require 'cucumber'
 require 'site_prism'
 require 'selenium-webdriver'
-require 'capybara/poltergeist'
+
 
 #BASE_URL = 'https://github.com/'
 Capybara.app_host = 'https://github.com/'

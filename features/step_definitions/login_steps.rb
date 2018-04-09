@@ -7,8 +7,9 @@ When(/^I enter "([^"]*)" and "([^"]*)" as user, password$/) do |user, password|
   @app.login.doLogin user, password
 end
 
-Then(/^I am successfully login as "([^"]*)"$/) do |name|
-  expect(@app.home.has_user_profile_icon?)
+Then(/^I am successfully login as "([^"]*)"$/) do |user_name|
+  @app.userHome.profile_icon.click
+  expect(@app.userHome.profile_user_name).to have_text(user_name)
 end
 
 When(/^I try to login with empty email and password$/) do
