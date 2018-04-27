@@ -5,7 +5,6 @@ require 'cucumber'
 require 'site_prism'
 require 'selenium-webdriver'
 
-
 #BASE_URL = 'https://github.com/'
 Capybara.app_host = 'https://github.com/'
 
