@@ -13,8 +13,12 @@
         @pages[:login] ||= Pages::LoginPage.new
       end
 
-      def userHome
-        @pages[:userHome] ||= Pages::UserHome.new
+      def UserHome
+        @pages[:UserHome] ||= Pages::UserHome.new
+      end
+
+      def RepoPage
+        @pages[:RepoPage] ||= Pages::RepoPage.new
       end
 
     end
